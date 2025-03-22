@@ -1,7 +1,8 @@
 //require express, express router and bcrypt as shown in lecture code
 const express = require('express');
 const router = express.Router();
-const helper = require('../helper');
+const {validationFunction,validationLogin,validObjectId,
+  validationProfile} = require('../helper');
 const { createUser,checkUser,updateUser } = require('../data/auth');
 const { authorizeUser } = require('../data/authorized');
 const sanitizeHtml = require('sanitize-html');
@@ -59,8 +60,8 @@ router.route('/').get(authorizeUser,async (req, res) => {
         
         let requestData = req.user.id;
         let data = req.body;
-        helper.validationProfile(data);
-          helper.validObjectId(requestData);
+        validationProfile(data);
+          validObjectId(requestData);
           const details = await updateUser(requestData,data);
           if(details.updated){
               // console.log(details);
@@ -94,7 +95,7 @@ router.route('/').get(authorizeUser,async (req, res) => {
     requestData.BillingAddress = requestData.Street;
     
     try {
-      helper.validationFunction(requestData);
+      validationFunction(requestData);
  
       const usersList = await createUser(requestData);
   
@@ -152,7 +153,7 @@ router.route('/login').post(async (req, res) => {
   let requestData = req.body;
     
     try {
-      helper.validationLogin(requestData);
+      validationLogin(requestData);
    
       const user = await checkUser(requestData);
   

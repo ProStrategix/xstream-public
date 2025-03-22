@@ -71,5 +71,5 @@ function validationFunction(data){
     validationFunction,
     validationLogin,
     validObjectId,
-    validationProfile
+    validationProfile,
   };
