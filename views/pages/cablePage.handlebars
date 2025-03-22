@@ -1,0 +1,539 @@
+ <section class="video-section" id="home" data-aos="fade-down" data-aos-delay="200" data-aos-duration="900">
+        <div class="main-feature2">
+            <!-- Title at the top left -->
+            
+            <h1 class="home-page-title"><span style="color: #ffa039;">Bridging the Gap</span> Between Cable and Streaming</h1>
+            <div class="slider">
+                <div class="slide-track">
+                  
+                </div>
+               
+            </div>
+            <div class="slider2">
+                <div class="slide-track2">
+                  
+                </div>
+                
+            </div>
+            <div class="slider3">
+                <div class="slide-track3">
+                  
+                </div>
+                
+            </div>
+     
+                <h2 class="main-subtitles">Enjoy the <span style="color: #ffa039;">Best Shows</span> <br>with Cutting-Edge <br>Streaming</h2>
+           
+        </div>
+    </section>
+    
+    
+
+    <!-- Features Section -->
+    
+    <section class="features" data-aos="fade-down" data-aos-delay="200" data-aos-duration="900">
+        
+        <div class="main-feature" >
+            <div class="heading-container">
+                <h1>High Quality Content <span style="color: #ffa039;"> Anytime Anywhere</span></h1>
+                <p>Our advanced in-home streaming technology ensures fast, seamless service and exceptional picture quality, offering you a wide range of 
+                    channels to enjoy with reliability and ease.</p>
+            </div>
+            
+            
+              
+                <div class="gradient-cards">
+                            <div class="card">
+                                <div class="container-card bg-orange-box">
+                                    <i class="fa-solid fa-trophy"></i>
+                                    <p class="card-title">Ultimate TV Viewing Experience</p>
+                                    <p class="card-description">In-home streaming technology delivers crystal-clear High Definition Video, Surround Sound, Close Captions and FUNTASTIC Features so you can enjoy the best entertainment a vast selection of channels can provide.</p>
+                                    <button class="read-more-btn ">Read More</button>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="container-card bg-orange-box">
+                                    <i class="fas fa-tv"></i>
+                                    <p class="card-title">Stay Tuned to All Your TV Favorites</p>
+                                    <p class="card-description">72 hour replay, Start Over, PVR and Resume features delivers the best TV experiences and allows you to watch what you want and when you want together with the whole home, different program watching option.</p>
+                                    <button class="read-more-btn ">Read More</button>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="container-card bg-orange-box">
+                                    <i class="fa-solid fa-piggy-bank"></i>
+                                    <p class="card-title">Simple Setup with superior features and savings</p>
+                                    <p class="card-description">Free Cloud based PVR recordings, Free Replay TV, Free Resume and Start Over features without the need for any set top boxes or any additional hardware, totally eliminates these additional and costly add-ons while eliminating most of your cabling throughout your home resulting in significant monthly savings and therefore lower overall costs for TV and your entertainment.
+                                        Additionally our very small TV modem which attaches directly to the TV via its HDMI port, turns any TV into a Smart TV with all those features that it brings, now you'll have the Ultimate in entertainment.
+                                    </p>
+                                     <button class="read-more-btn ">Read More</button>
+                                </div>
+                            </div>
+                 
+                </div>
+              
+            
+               
+            
+    
+        </div>
+        
+        
+    </section>
+    
+
+    <section class="features1" data-aos="fade-down" data-aos-delay="200" data-aos-duration="900">
+        
+        <div class="main-feature" >
+            <div class="heading-container">
+                <h1>Xstream <span style="color: #ffa039;"> TV</span> Plans</span></h1>
+                <p>No Contracts. Simple Pricing. Customize with Upgrades.</p>
+            </div>
+            
+            {{#if data}}
+            <div class="pricing-container">
+                {{#if data.basic}}
+                <div class="pricing-column-wrapper style3">
+                    <div class="pricing-column style3">
+                        <div class="pricing-price-row style3">
+                        <div class="pricing-price-wrapper style3">
+                            <div class="pricing-price style3">
+                            <div class="pricing-cost style3">${{data.basic.Price}}</div>
+                            <div class="time" style="display:inline-block;">Per Month</div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="pricing-row-title style3">
+                        <div class="pricing_row_title style3">{{data.basic.Name}}</div>
+                        </div>
+                        <div class="logo-carousel style3">
+                            <div class="logo-track-op-basic style3">
+                                
+                                <!-- <div class="logo-slide">
+                                    <img src="images/channel/espn.png" alt="ESPN">
+                                </div> -->
+                            
+                            </div>
+                            <div class="dots-container-op-basic style3">
+                                <button class="carousel-btn left-btn style3"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></button>
+                                <!-- <span class="dot" data-slide="0"></span> -->
+                                <button class="carousel-btn right-btn style3"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></button>
+                            </div>
+                        </div>
+                        <figure class="pricing-row">Up to 20 channels</figure>
+                        <figure class="pricing-row">Full Interactive TV guide</figure>
+                        <figure class="pricing-row">Includes community channels</figure>
+                        <figure class="pricing-row">Requires Internet of 25 Mbps</figure>
+                        {{!-- <figure class="pricing-row strike">DVR Not Included</figure> --}}
+                        <div class="pricing-footer style3">
+                        <div class="gem-button-container gem-button-position-center style3">
+                            <a href="/compareplans" class="gem-button gem-orange style3">Compare Plans</a>
+                            <a href="/service" class="gem-button gem-orange style3">Get Started</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                {{/if}}
+
+                {{#if data.choice}}
+                <div class="pricing-column-wrapper">
+                    <div class="pricing-column">
+                        <div class="pricing-price-row">
+                        <div class="pricing-price-wrapper">
+                            <div class="pricing-price">
+                            <div class="pricing-cost">${{data.choice.Price}}</div>
+                            <div class="time" style="display:inline-block;">Per Month</div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="pricing-row-title">
+                        <div class="pricing_row_title">{{data.choice.Name}}</div>
+                        </div>
+                        <div class="logo-carousel3">
+                            <div class="logo-track-choice">
+                                
+                                <!-- <div class="logo-slide">
+                                    <img src="images/channel/espn.png" alt="ESPN">
+                                </div> -->
+                            
+                            </div>
+                            <div class="dots-container-choice">
+                                <button class="carousel-btn left-btn3"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></button>
+                                <!-- <span class="dot" data-slide="0"></span> -->
+                                <button class="carousel-btn right-btn3"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></button>
+                            </div>
+                        </div>
+                        <figure class="pricing-row">Total 80 channels</figure>
+                        <figure class="pricing-row">Includes OP Basic and all major TV Networks</figure>
+                        <figure class="pricing-row">Includes 72 hour Replay TV feature</figure>
+                        <figure class="pricing-row">Requires Internet of 25 Mbps</figure>
+                        {{!-- <figure class="pricing-row strike">DVR Not Included</figure> --}}
+                        <div class="pricing-footer">
+                        <div class="gem-button-container gem-button-position-center">
+                            <a href="/compareplans" class="gem-button gem-orange">Compare Plans</a>
+                            <a href="/service" class="gem-button gem-orange">Get Started</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+              {{/if}}
+            {{#if data.preferred}}
+                <div class="pricing-column-wrapper style2">
+                    <div class="pricing-column style2">
+                        <!-- <div class="pricing-price-row"> -->
+                        <div class="pricing-price-wrapper style2">
+                            <div class="pricing-price style2">
+                            <div class="pricing-cost style2">${{data.preferred.Price}}</div>
+                            <div class="time style2" style="display:inline-block;">Per Month</div>
+                            </div>
+                        </div>
+                        <!-- </div> -->
+                        <div class="pricing-row-title style2">
+                        <div class="pricing_row_title style2">{{data.preferred.Name}}</div>
+                        </div>
+                        <!-- Scrollable logo carousel with dots -->
+                        <div class="logo-carousel2">
+                            <div class="logo-track-preferred">
+                                
+                                <!-- <div class="logo-slide">
+                                    <img src="images/channel/espn.png" alt="ESPN">
+                                </div> -->
+                            
+                            </div>
+                            <div class="dots-container-preferred">
+                                <button class="carousel-btn2 left-btn2"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></button>
+                                <button class="carousel-btn2 right-btn2"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></button>
+                            </div>
+                        </div>
+
+                        <figure class="pricing-row style2">Over 60 of the best National Cable channels.</figure>
+                        <figure class="pricing-row style2">Includes PVR video recording</figure>
+                        {{!-- <figure class="pricing-row style2">25 hours of Cloud DVR</figure> --}}
+                        <figure class="pricing-row style2">Includes 72 hour Replay TV</figure>
+                        <figure class="pricing-row">Requires Internet of 25 Mbps</figure>
+                        {{!-- <figure class="pricing-empty style2"></figure> --}}
+                        <!-- <div class="pricing-footer"> -->
+                        <div class="gem-button-position-center style2">
+                            <a href="/compareplans" class="gem-button gem-orange style2">Compare Plans</a>
+                            <a href="/service" class="gem-button gem-orange style2">Get Started</a>
+                        </div>
+                        <!-- </div> -->
+                    </div>
+                </div>
+                {{/if}}
+                
+            
+
+
+            </div>
+              {{/if}}  
+
+        </div>
+        
+        
+    </section>
+    
+    <section class="features" data-aos="fade-down" data-aos-delay="200" data-aos-duration="900">
+        
+        <div class="main-feature" >
+            <div class="heading-container">
+                <h1>Popular Add-On Packages Offer Something for<span style="color: #069bd9;"> Everyone </span></h1>
+                <p>Access to these upgrades requires a Preferred subscription.  
+                    These members can select one or more options based on their interests.</p>
+            </div>
+            {{#if data}}
+            <div class="gradient-cards2">
+            {{#if data.expanded}}
+            <article class="plan [ card-plan ] Extended">
+                <div class="inner">
+        
+                    <span class="pricing Extended">
+                        <span>
+                            +${{data.expanded.Price}} <small>/ m</small>
+                        </span>
+                    </span>
+                    <h2 class="title">{{data.expanded.Name}}</h2>
+                    <p class="info">Plan available to Preferred Plan Subscribers.</p>
+                    
+                    <ul class="features">
+                        <li>
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path fill="none" d="M0 0h24v24H0z" />
+                                    <path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z" fill="currentColor" />
+                                </svg>
+                            </span>
+                            <span>Over 40 more National Cable channels</span>
+                        </li>
+                        <li>
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path fill="none" d="M0 0h24v24H0z" />
+                                    <path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z" fill="currentColor" />
+                                </svg>
+                            </span>
+                            <span>The ultimate entertainment TV package</span>
+                        </li>
+                       
+                        <li>
+                                <span class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z" />
+                                        <path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z" fill="currentColor" />
+                                    </svg>
+                                </span>
+                                <span>Up to 185 + channels and growing</span>
+                        </li>
+                        <li>
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path fill="none" d="M0 0h24v24H0z" />
+                                    <path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z" fill="currentColor" />
+                                </svg>
+                            </span>
+                            <span>Requires Preferred package</span>
+                        </li>
+                    </ul>
+                    <button class="button Extended" onclick="location.href='/service';">
+                        Choose plan
+                    </button>
+                </div>
+            </article>  
+            {{/if}}
+{{#if data.sports}}
+            <article class="plan [ card-plan ] Sports">
+                <div class="inner">
+        
+                    <span class="pricing Sports">
+                        <span>
+                            +${{data.sports.Price}}  <small>/ m</small>
+                        </span>
+                    </span>
+                    <h2 class="title">{{data.sports.Name}}</h2>
+                    <p class="info">Plan available to Preferred Plan Subscribers.</p>
+                    <ul class="features">
+                        <li>
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path fill="none" d="M0 0h24v24H0z" />
+                                    <path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z" fill="currentColor" />
+                                </svg>
+                            </span>
+                            <span><strong>12</strong>additional premium Sports channels</span>
+                        </li>
+                        <li>
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path fill="none" d="M0 0h24v24H0z" />
+                                    <path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z" fill="currentColor" />
+                                </svg>
+                            </span>
+                            <span>Combined with the Preferred Plan offers the ultimate in sports programming</span>
+                        </li>
+                       
+                        <li>
+                                <!-- <span class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z" />
+                                        <path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z" fill="currentColor" />
+                                    </svg>
+                                </span> -->
+                                {{!-- <span class="strike">No additional DVR hrs. beyond Basic</span> --}}
+                        </li>
+                        <li>
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path fill="none" d="M0 0h24v24H0z" />
+                                    <path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z" fill="currentColor" />
+                                </svg>
+                            </span>
+                            <span>Record via PVR and also enjoy Replay TV for all your sports shows so you don't miss anything.</span>
+                        </li>
+                    </ul>
+                    <button class="button Sports" onclick="location.href='/service';">
+                        Choose plan
+                    </button>
+                </div>
+            </article>
+{{/if}}
+{{#if data.hbo}}
+            <article class="plan [ card-plan ] HBO">
+                <div class="inner">
+        
+                    <span class="pricing HBO">
+                        <span>
+                            +${{data.hbo.Price}} <small>/ m</small>
+                        </span>
+                    </span>
+                    <h2 class="title">{{data.hbo.Name}} Premium</h2>
+                    <p class="info">Plan available to Preferred Plan Subscribers.</p>
+                    <ul class="features">
+                        <li>
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path fill="none" d="M0 0h24v24H0z" />
+                                    <path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z" fill="currentColor" />
+                                </svg>
+                            </span>
+                            <span><strong>6</strong> additional HBO premium channels</span>
+                        </li>
+                        <li>
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path fill="none" d="M0 0h24v24H0z" />
+                                    <path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z" fill="currentColor" />
+                                </svg>
+                            </span>
+                            <span>Movies, Documentaries specials</span>
+                        </li>
+                       
+                        <li>
+                                <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path fill="none" d="M0 0h24v24H0z" />
+                                    <path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z" fill="currentColor" />
+                                </svg>
+                            </span>
+                            <span>HBO only original series shows </span>
+                        </li>
+                        <li>
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path fill="none" d="M0 0h24v24H0z" />
+                                    <path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z" fill="currentColor" />
+                                </svg>
+                            </span>
+                            <span>Walking Dead, Game of Thrones, Dune, Curb your Enthusiasm etc etc.</span>
+                        </li>
+                    </ul>
+                    <button class="button HBO" onclick="location.href='/service';">
+                        Choose plan
+                    </button>
+                </div>
+            </article>
+        {{/if}}
+        {{#if data.spanish}}
+            <article class="plan [ card-plan ] Cinemax">
+                <div class="inner">
+        
+                    <span class="pricing Cinemax">
+                        <span>
+                            <small></small>
+                        </span>
+                    </span>
+                    <h2 class="title">{{data.spanish.Name}}</h2>
+                    <p class="info">Plan available to Preferred Plan Subscribers.</p>
+                    <ul class="features">
+                        <li>
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path fill="none" d="M0 0h24v24H0z" />
+                                    <path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z" fill="currentColor" />
+                                </svg>
+                            </span>
+                            <span>Coming soon a comprehensive selection of Spanish language shows from all over the world.</span>
+                        </li>
+                        <li>
+                            {{!-- <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path fill="none" d="M0 0h24v24H0z" />
+                                    <path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z" fill="currentColor" />
+                                </svg>
+                            </span>
+                            <span>Dedicated Support</span> --}}
+                        </li>
+                       
+                        <li>
+                                <!-- <span class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z" />
+                                        <path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z" fill="currentColor" />
+                                    </svg>
+                                </span> -->
+                                {{!-- <span class="strike">No additional DVR hrs. beyond Basic</span> --}}
+                        </li>
+                        <li>
+                            {{!-- <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path fill="none" d="M0 0h24v24H0z" />
+                                    <path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z" fill="currentColor" />
+                                </svg>
+                            </span>
+                            <span>Mobile App</span> --}}
+                        </li>
+                    </ul>
+                    <button class="button Cinemax">
+                        Coming Soon
+                    </button>
+                </div>
+            </article>
+            {{/if}}
+ 
+        </div>    
+        {{/if}}
+        </div>
+        
+        
+    </section>
+    
+    <!-- Footer -->
+    <section class="features1" id="footer" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+        <div class="main-feature" >
+            <div class="heading-container">
+                <h1><span style="color: #ffa039;">200+ </span> Channels of Superior Streaming.</h1>
+                <p>On-Demand Entertainment, Just the Way You Like It.</p>
+            </div>
+
+            <div class="background">
+                <div class="container">
+                  <div class="screen">
+                    <div class="screen-header">
+                      <div class="screen-header-left">
+                        <div class="screen-header-button close"></div>
+                        <div class="screen-header-button maximize"></div>
+                        <div class="screen-header-button minimize"></div>
+                      </div>
+                      <div class="screen-header-right">
+                        <div class="screen-header-ellipsis"></div>
+                        <div class="screen-header-ellipsis"></div>
+                        <div class="screen-header-ellipsis"></div>
+                      </div>
+                    </div>
+                    <div class="screen-body">
+                      <div class="screen-body-item left">
+                        <div class="app-title">
+                          <span>CONTACT</span>
+                          <span>US</span>
+                        </div>
+                        <div class="app-contact">By clicking Sign Up you're confirming that you agree with our Terms and Conditions</div>
+                      </div>
+                      <div class="screen-body-item">
+                        <div class="app-form">
+                            <form id="contactForm">
+                          <div class="app-form-group">
+                            <input type="text" class="app-form-control" id="name" required placeholder="NAME" value="John Smith">
+                          </div>
+                          <div class="app-form-group">
+                            <input type="email" class="app-form-control" id="email" required placeholder="EMAIL">
+                          </div>
+                          <div class="app-form-group">
+                            <input type="number" class="app-form-control" id="number" required placeholder="CONTACT NO">
+                          </div>
+                          <div class="app-form-group message">
+                            <textarea class="app-form-control" id="message" required placeholder="MESSAGE"> </textarea>
+                          </div>
+                          <div class="app-form-group buttons">
+                            <button type="submit" class="app-form-button">Contact for Information</button>
+                          </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              
+
+        </div>
+    </section>
